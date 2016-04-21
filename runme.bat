@@ -1,47 +1,76 @@
-mkdir source
-cd source
-
+mkdir /D source
 type NUL > index.html
-mkdir images
 
-mkdir css
-cd css
+mkdir /D images
+type NUL > .gitkeep
+cd..
+
+mkdir /D css
 type NUL > default.css
 cd..
 
-mkdir less
-cd less
+mkdir /D less
 type NUL > default.less
 cd..
 
-mkdir js
-cd js
+mkdir /D js
 type NUL > functions.js
 type NUL > app.js
 
-mkdir modules
-mkdir filters
-mkdir controllers
-mkdir services
+mkdir /D modules
+type NUL > .gitkeep
+cd..
+
+mkdir /D filters
+type NUL > .gitkeep
+cd..
+
+mkdir /D controllers
+type NUL > .gitkeep
+cd..
+
+mkdir /D services
+type NUL > .gitkeep
+cd..
+
 cd ..
 cd ..
 
-mkdir dest
-cd dest
+mkdir /D dest
+type NUL > index.html
 
-mkdir images
+mkdir /D images
+type NUL > .gitkeep
+cd..
 
-mkdir css
+mkdir /D css
+type NUL > default.css
+cd..
 
-mkdir less
+mkdir /D less
+type NUL > default.less
+cd..
 
-mkdir js
-cd js
+mkdir /D js
+type NUL > functions.js
+type NUL > app.js
 
-mkdir modules
-mkdir filters
-mkdir controllers
-mkdir services
+mkdir /D modules
+type NUL > .gitkeep
+cd..
+
+mkdir /D filters
+type NUL > .gitkeep
+cd..
+
+mkdir /D controllers
+type NUL > .gitkeep
+cd..
+
+mkdir /D services
+type NUL > .gitkeep
+cd..
+
 cd ..
 cd ..
 
