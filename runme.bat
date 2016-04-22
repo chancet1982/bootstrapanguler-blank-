@@ -1,77 +1,124 @@
-mkdir /D source
-type NUL > index.html
+@echo off
+cls 
+set "SRC=src"
+set "DEST=dist"
 
-mkdir /D images
-type NUL > .gitkeep
+echo "CREATING: Source file structure at: %SRC%"
+md %SRC%
+cd %SRC%
+    type NUL > .gitkeep
+    type NUL > index.html
+
+    md images
+    cd images
+        type NUL > .gitkeep
+    cd..
+
+    md css
+    cd css
+        type NUL > .gitkeep
+        type NUL > default.css
+    cd..
+
+    md less
+    cd less
+        type NUL > .gitkeep
+        type NUL > default.less
+    cd..
+
+    md js
+    cd js
+        type NUL > .gitkeep
+        type NUL > app.js
+
+        md controllers
+        cd controllers
+           type NUL > .gitkeep
+        cd..
+        md modules
+        cd modules
+           type NUL > .gitkeep
+        cd..
+        md filters
+        cd filters
+           type NUL > .gitkeep
+        cd..
+        md directives
+        cd directives
+           type NUL > .gitkeep
+        cd..
+        md views
+        cd views
+           type NUL > .gitkeep
+        cd..     
+    cd..
+
+    md tests
+    cd tests
+        type NUL > .gitkeep
+
+        md controllers
+        cd controllers
+           type NUL > .gitkeep
+        cd..
+        md modules
+        cd modules
+           type NUL > .gitkeep
+        cd..
+        md filters
+        cd filters
+           type NUL > .gitkeep
+        cd..
+        md directives
+        cd directives
+           type NUL > .gitkeep
+        cd..
+        md views
+        cd views
+           type NUL > .gitkeep
+        cd..     
+    cd..
 cd..
 
-mkdir /D css
-type NUL > default.css
+echo "CREATING: Destination file structure at: %DEST%"
+md %DEST%
+cd %DEST%
+    type NUL > .gitkeep
+
+    md images
+    cd images
+        type NUL > .gitkeep
+    cd..
+
+    md css
+    cd css
+        type NUL > .gitkeep
+    cd..
+
+    md js
+    cd js
+        type NUL > .gitkeep
+
+        md controllers
+        cd controllers
+           type NUL > .gitkeep
+        cd..
+        md modules
+        cd modules
+           type NUL > .gitkeep
+        cd..
+        md filters
+        cd filters
+           type NUL > .gitkeep
+        cd..
+        md directives
+        cd directives
+           type NUL > .gitkeep
+        cd..
+        md views
+        cd views
+           type NUL > .gitkeep
+        cd..     
+    cd..
 cd..
-
-mkdir /D less
-type NUL > default.less
-cd..
-
-mkdir /D js
-type NUL > functions.js
-type NUL > app.js
-
-mkdir /D modules
-type NUL > .gitkeep
-cd..
-
-mkdir /D filters
-type NUL > .gitkeep
-cd..
-
-mkdir /D controllers
-type NUL > .gitkeep
-cd..
-
-mkdir /D services
-type NUL > .gitkeep
-cd..
-
-cd ..
-cd ..
-
-mkdir /D dist
-type NUL > index.html
-
-mkdir /D images
-type NUL > .gitkeep
-cd..
-
-mkdir /D css
-type NUL > default.css
-cd..
-
-mkdir /D less
-type NUL > default.less
-cd..
-
-mkdir /D js
-type NUL > functions.js
-type NUL > app.js
-
-mkdir /D modules
-type NUL > .gitkeep
-cd..
-
-mkdir /D filters
-type NUL > .gitkeep
-cd..
-
-mkdir /D controllers
-type NUL > .gitkeep
-cd..
-
-mkdir /D services
-type NUL > .gitkeep
-cd..
-
-cd ..
-cd ..
-
-echo file structure created!
+echo "DONE: File structure created successfully!"
