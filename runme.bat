@@ -36,7 +36,7 @@ cd..
 cd ..
 cd ..
 
-mkdir /D dest
+mkdir /D dist
 type NUL > index.html
 
 mkdir /D images
